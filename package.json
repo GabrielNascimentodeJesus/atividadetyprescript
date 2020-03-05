@@ -1,0 +1,23 @@
+{
+  "name": "atividadetyprescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielNascimentodeJesus/atividadetyprescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielNascimentodeJesus/atividadetyprescript/issues"
+  },
+  "homepage": "https://github.com/GabrielNascimentodeJesus/atividadetyprescript#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
