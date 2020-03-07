@@ -14,18 +14,18 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var hospital;
 (function (hospital) {
-    var Paciente = /** @class */ (function (_super) {
-        __extends(Paciente, _super);
-        function Paciente() {
+    var Enfermeiro = /** @class */ (function (_super) {
+        __extends(Enfermeiro, _super);
+        function Enfermeiro() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        Paciente.prototype.getCodPaciente = function () {
-            return this.codPaciente;
+        Enfermeiro.prototype.getCoren = function () {
+            return this.coren;
         };
-        Paciente.prototype.setCodPaciente = function (cod) {
-            this.codPaciente = cod;
+        Enfermeiro.prototype.setCoren = function (coren) {
+            this.coren = coren;
         };
-        return Paciente;
-    }(hospital.Pessoa));
-    hospital.Paciente = Paciente;
+        return Enfermeiro;
+    }(hospital.Funcionario));
+    hospital.Enfermeiro = Enfermeiro;
 })(hospital || (hospital = {}));

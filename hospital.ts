@@ -21,6 +21,14 @@ namespace hospital{
             return this.enfermeiros;
         }
 
+        addPaciente(paciente:Paciente):void{
+            this.pacientes.push(paciente);
+        }
+
+        getPaciente(){
+            return this.pacientes;
+        }
+
         
 
     }

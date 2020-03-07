@@ -19,6 +19,12 @@ var hospital;
         Hospital.prototype.getEnfermeiro = function () {
             return this.enfermeiros;
         };
+        Hospital.prototype.addPaciente = function (paciente) {
+            this.pacientes.push(paciente);
+        };
+        Hospital.prototype.getPaciente = function () {
+            return this.pacientes;
+        };
         return Hospital;
     }());
     hospital.Hospital = Hospital;

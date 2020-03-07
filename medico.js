@@ -14,18 +14,24 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var hospital;
 (function (hospital) {
-    var Paciente = /** @class */ (function (_super) {
-        __extends(Paciente, _super);
-        function Paciente() {
+    var Medico = /** @class */ (function (_super) {
+        __extends(Medico, _super);
+        function Medico() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        Paciente.prototype.getCodPaciente = function () {
-            return this.codPaciente;
+        Medico.prototype.getCrm = function () {
+            return this.crm;
         };
-        Paciente.prototype.setCodPaciente = function (cod) {
-            this.codPaciente = cod;
+        Medico.prototype.setCrm = function (crm) {
+            this.crm = crm;
         };
-        return Paciente;
-    }(hospital.Pessoa));
-    hospital.Paciente = Paciente;
+        Medico.prototype.getEspecialidade = function () {
+            return this.especialidade;
+        };
+        Medico.prototype.setEspecialidade = function (especialidade) {
+            this.especialidade = especialidade;
+        };
+        return Medico;
+    }(hospital.Funcionario));
+    hospital.Medico = Medico;
 })(hospital || (hospital = {}));

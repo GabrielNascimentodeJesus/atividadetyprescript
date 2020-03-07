@@ -1,5 +1,12 @@
 namespace hospital{
-    export class paciente extends Pessoa{
-        
+    export class Paciente extends Pessoa{
+        codPaciente: number;
+
+        getCodPaciente(): number{
+            return this.codPaciente;
+        }
+        setCodPaciente(cod:number):void{
+            this.codPaciente = cod;
+        }
     }
 }
