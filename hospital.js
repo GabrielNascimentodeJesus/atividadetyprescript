@@ -25,6 +25,12 @@ var hospital;
         Hospital.prototype.getPaciente = function () {
             return this.pacientes;
         };
+        Hospital.prototype.addMedico = function (medico) {
+            this.medicos.push(medico);
+        };
+        Hospital.prototype.getMedico = function () {
+            return this.medicos;
+        };
         return Hospital;
     }());
     hospital.Hospital = Hospital;

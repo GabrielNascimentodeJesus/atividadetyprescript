@@ -35,11 +35,17 @@ namespace hospital{
     m3.setCodFuncionario(8);
     m3.setCrm(645);
     m3.setEspecialidade("Clinico Geral");
-
     let h = new Hospital();
-    h.setNomeHospital("Hospital Sasuke Uchiha");
+    h.setNomeHospital ("Hospital");
     h.addEnfermeiro(e);
     h.addEnfermeiro(e2);
     h.addEnfermeiro(e3);
-    h.addPaciente
+    h.addMedico(m);
+    h.addMedico(m2);
+    h.addMedico(m3);
+    h.addPaciente(p);
+    h.addPaciente(p2);
+    h.addPaciente(p3);
+        
+        document.getElementById("nomeHospital").textContent=h.getNomeHospital();
 }

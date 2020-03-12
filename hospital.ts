@@ -5,6 +5,8 @@ namespace hospital{
         private medicos: Array<Medico> = [];
         private pacientes: Array<Paciente> = [];
 
+        
+
         getNomeHospital():string{
             return this.nomeHospital;
         }
@@ -28,8 +30,13 @@ namespace hospital{
         getPaciente(){
             return this.pacientes;
         }
-
         
+        addMedico(medico:Medico):void{
+            this.medicos.push(medico);
+        }
 
+        getMedico(){
+            return this.medicos;
+        }
     }
 }
