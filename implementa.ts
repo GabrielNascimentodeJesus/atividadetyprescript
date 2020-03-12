@@ -36,7 +36,7 @@ namespace hospital{
     m3.setCrm(645);
     m3.setEspecialidade("Clinico Geral");
     let h = new Hospital();
-    h.setNomeHospital ("Hospital");
+    h.setNomeHospital ("Hospital Sasuke Uchiha");
     h.addEnfermeiro(e);
     h.addEnfermeiro(e2);
     h.addEnfermeiro(e3);
@@ -47,5 +47,38 @@ namespace hospital{
     h.addPaciente(p2);
     h.addPaciente(p3);
         
-        document.getElementById("nomeHospital").textContent=h.getNomeHospital();
+    document.getElementById("nomeHospital").textContent=h.getNomeHospital();
+
+    let tbMedico = document.getElementById("medico");
+
+    h.getMedico().forEach(h=>{
+            let nome = h.getNome();
+            let id = h.getCodFuncionario();
+            let cpf = h.getCpf();
+            let crm = h.getCrm();
+            let especialidade = h.getEspecialidade();
+            let html = "<tr><td>"+id+"</td><td>"+nome+"</td><td>"+cpf+"</td><td>"+especialidade+"</td><td>"+crm+"</td></tr>";
+            tbMedico.innerHTML += html;
+    });
+
+    let tbEnfermeiro = document.getElementById("enfermeiro");
+
+    h.getEnfermeiro().forEach(h=>{
+            let nome = h.getNome();
+            let id = h.getCodFuncionario();
+            let cpf = h.getCpf();
+            let crm = h.getCoren();
+            let html = "<tr><td>"+id+"</td><td>"+nome+"</td><td>"+cpf+"</td><td>"+crm+"</td></tr>";
+            tbEnfermeiro.innerHTML += html;
+    });
+
+    let tbPaciente = document.getElementById("paciente");
+
+    h.getPaciente().forEach(h=>{
+            let nome = h.getNome();
+            let id = h.getCodPaciente();
+            let cpf = h.getCpf();
+            let html = "<tr><td>"+id+"</td><td>"+nome+"</td><td>"+cpf+"</td></tr>";
+            tbPaciente.innerHTML += html;
+    });
 }
